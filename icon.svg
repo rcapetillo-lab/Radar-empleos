@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0f1f3d"/>
+      <stop offset="100%" stop-color="#070e1a"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fbbf24" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#fbbf24" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="512" height="512" rx="100" fill="url(#bg)"/>
+
+  <!-- Glow -->
+  <circle cx="256" cy="256" r="200" fill="url(#glow)"/>
+
+  <!-- Grid lines subtle -->
+  <line x1="0" y1="128" x2="512" y2="128" stroke="#fbbf24" stroke-opacity="0.06" stroke-width="1"/>
+  <line x1="0" y1="256" x2="512" y2="256" stroke="#fbbf24" stroke-opacity="0.06" stroke-width="1"/>
+  <line x1="0" y1="384" x2="512" y2="384" stroke="#fbbf24" stroke-opacity="0.06" stroke-width="1"/>
+  <line x1="128" y1="0" x2="128" y2="512" stroke="#fbbf24" stroke-opacity="0.06" stroke-width="1"/>
+  <line x1="256" y1="0" x2="256" y2="512" stroke="#fbbf24" stroke-opacity="0.06" stroke-width="1"/>
+  <line x1="384" y1="0" x2="384" y2="512" stroke="#fbbf24" stroke-opacity="0.06" stroke-width="1"/>
+
+  <!-- Radar circles -->
+  <circle cx="256" cy="256" r="160" fill="none" stroke="#fbbf24" stroke-opacity="0.12" stroke-width="1.5"/>
+  <circle cx="256" cy="256" r="110" fill="none" stroke="#fbbf24" stroke-opacity="0.18" stroke-width="1.5"/>
+  <circle cx="256" cy="256" r="60"  fill="none" stroke="#fbbf24" stroke-opacity="0.25" stroke-width="1.5"/>
+
+  <!-- Radar sweep line -->
+  <line x1="256" y1="256" x2="400" y2="130" stroke="#fbbf24" stroke-opacity="0.35" stroke-width="2"/>
+
+  <!-- Lightning bolt / energy icon -->
+  <polygon points="275,110 220,265 258,265 237,400 310,230 268,230 300,110"
+    fill="#fbbf24" opacity="0.95"/>
+
+  <!-- Dot accent -->
+  <circle cx="360" cy="175" r="8" fill="#fbbf24" opacity="0.9"/>
+  <circle cx="360" cy="175" r="14" fill="#fbbf24" opacity="0.2"/>
+
+  <!-- Bottom label -->
+  <text x="256" y="460" text-anchor="middle" font-family="monospace" font-size="28" font-weight="700" fill="#fbbf24" opacity="0.6" letter-spacing="4">RADAR</text>
+</svg>
